@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap');
+
+:root{
+    --cor-primaria: #f06;
+    --texto: #fff;
+    --bg-padrao: #111;
+    --bg-destaque: #2d2d2d;
+    --font: 'Roboto', san-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--bg-padrao);
+    font-family: var(--font);
+    color: var(--texto);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-destaque);
+    align-items: flex-end;
+}
+
+#logo{
+    height: 2.2rem;
+    align-self: center;
+    margin: 0 0 0.3rem 0.5rem;
+}
+
+#titulo{
+    color: var(--cor-primaria);
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    margin-left: 0.5rem;
+}
+
+nav{
+   display: flex;
+   align-items: flex-end; 
+   flex-grow: 1;
+}
+
+nav ul{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin: 0.4rem 1.6rem 0.4rem 1.6rem;
+}
+
+nav li{
+    margin: 0.6rem;
+    list-style: none;
+    flex-grow: 1;
+}
+
+li#sobre-modulo{
+    flex-grow: 2;
+    text-align: right;
+}
+
+a{
+    color: var(--texto);
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+p#titulo-filme{
+    padding: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 43.88px;
+    color: var(--texto);
+}
+
+p#sinopse-filme{
+    padding: 15px;
+    font-family: Roboto;
+    color: #CCCCCC;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.04em;
+
+    width: 60%;
+}
+
+#info-filme{
+    height: 25rem;
+    width: 100%;
+    position: relative;
+}
+
+#info-filme::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.themoviedb.org/t/p/original/kiJ0yEb70xEj8uDhhDYkvLgxSzv.jpg);
+    position: absolute;
+    background-size: cover;
+    z-index: -1;
+    filter: opacity(0.3);
+    box-shadow: inset 0 -100px 100px var(--bg-padrao);
+}
+
+img#capa{
+    width: 20rem;
+    margin: 5% 0 5% 5% 
+}
+
+div#info-filme{
+    display: flex;
+    flex-direction: row;
+}
+
+div#texto-info-filme{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+p#titulo-filme{
+    margin-left: 2px;
+}
+
+#conteudos-inferiores{
+    display: flex;
+    flex-direction: row;
+    margin: 0 1% 0 1%;
+    justify-content: space-between;
+    width: 98%;
+}
+
+#atalhos-e-elenco{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#botoes-atalho{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-around;
+    margin: 2% 0 2% 0;
+}
+
+#botoes-atalho button{
+    padding: 1% 4% 1% 4%;
+    background-color: var(--cor-primaria);
+    color: var(--texto);
+    font-family: Roboto;
+    font-size: 0.9rem;
+    font-weight: 400;
+    border-radius: 0.5rem;
+}
+
+#elenco{
+    display: flex;
+    flex-direction: row;
+}
+
+#ficha-tecnica{
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-destaque);
+    border-radius: 0.4rem;
+}
+
+.item-ficha-tecnica{
+    list-style: none;
+    margin: 1rem 0 0 1rem;
+}
+
+.nome-info-ft, .nome-ator{
+    color: var(--texto);
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.dado-ft, .nome-personagem{
+    color: #747474;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+h2{
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+h2#titulo-elenco{
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+section#elenco{
+    margin-top: 5rem;
+}
+
+.ator-elenco{
+    margin-left: 2%;
+    text-align: center;
+    background-color: var(--bg-destaque);
+    padding: 0 1% 3% 1%;
+    width: 15%;
+    height: 90%;
+    border-radius: 0.4rem;
+    line-height: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.img-ator{
+    width: 90%;
+    height: 50%;
+    border-radius: 100%;
+    border-style: solid;
+    position: relative;
+    top: -50%;
+}
+

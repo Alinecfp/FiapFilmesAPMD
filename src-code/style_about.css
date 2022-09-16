@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap');
+
+:root{
+    --cor-primaria: #f06;
+    --texto: #fff;
+    --bg-padrao: #111;
+    --bg-destaque: #2d2d2d;
+    --font: 'Roboto', san-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--bg-padrao);
+    font-family: var(--font);
+    color: var(--texto);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-destaque);
+    align-items: flex-end;
+}
+
+#logo{
+    height: 2.2rem;
+    align-self: center;
+    margin: 0 0 0.3rem 0.5rem;
+}
+
+#titulo{
+    color: var(--cor-primaria);
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    margin-left: 0.5rem;
+}
+
+nav{
+   display: flex;
+   align-items: flex-end; 
+   flex-grow: 1;
+}
+
+nav ul{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin: 0.4rem 1.6rem 0.4rem 1.6rem;
+}
+
+nav li{
+    margin: 0.6rem;
+    list-style: none;
+    flex-grow: 1;
+}
+
+li#sobre-modulo{
+    flex-grow: 2;
+    text-align: right;
+}
+
+a{
+    color: var(--texto);
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+#conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bloco-conteudo{
+    margin-top: 3%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-destaque);
+    border-radius: 0.4rem;
+    width: 40%;
+}
+
+h2{
+    padding: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 43.88px;
+    color: var(--texto);
+    text-align: center;
+}
+
+h3{
+    font-family: Roboto;
+    font-size: 18px;
+    margin-top: 4%;
+    text-align: center;
+    font-weight: 500;
+    color: var(--texto);
+}
+
+.foto-dev{
+    width: 30%;
+    align-self: center;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: var(--cor-primaria);
+    margin-top: 2%;
+}
+
+#infos-dev{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-destaque);
+    border-radius: 0.4rem;
+    text-align: center;
+}
+
+.item-info{
+    list-style: none;
+    margin: 1rem 0 0 1rem;
+    padding: 0;
+}
+
+.nome-info{
+    color: var(--texto);
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.dado{
+    color: #747474;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+#botao-voltar{
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+    padding: 0.5% 2% 0.5% 2%;
+    background-color: var(--cor-primaria);
+    color: var(--texto);
+    font-family: Roboto;
+    font-size: 0.9rem;
+    font-weight: 400;
+    border-radius: 0.5rem;
+}
